@@ -4,7 +4,7 @@ import requiredRoleSchema from '../models/required-roles'
 
 export = {
   description: 'Vincula comandos a cargos específicos.',
-  category: 'Configuration',
+  category: 'Configuração',
 
   permissions: ['ADMINISTRATOR'],
   names: ['requiredroles', 'requirerole', 'requireroles'],
