@@ -3,7 +3,6 @@
   "version": "1.3.99",
   "main": "dist/index.js",
   "typings": "./typings.d.ts",
-  "type": "module",
   "scripts": {
     "tsc": "tsc -w --outDir dist --rootDir src --skipLibCheck",
     "compile": "tsc && node index.js",
