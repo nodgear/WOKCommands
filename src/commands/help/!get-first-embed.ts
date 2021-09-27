@@ -87,7 +87,7 @@ const getFirstEmbed = (
 
     embed.setDescription(
       embed.description +
-        `\n\n**${reaction} - ${key}** - ${amount} command${
+        `\n\n**${reaction} - ${key}** - ${amount} comando${
           amount === 1 ? '' : 's'
         }`
     )
