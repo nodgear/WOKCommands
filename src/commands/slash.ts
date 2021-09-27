@@ -3,7 +3,7 @@ import { ICallbackObject, ICommand } from '../..'
 
 export = {
   description: 'Permite ao desenvolvedor gerenciar commandos Slash',
-  category: 'Configuration',
+  category: 'Configuração',
 
   permissions: ['ADMINISTRATOR'],
 
