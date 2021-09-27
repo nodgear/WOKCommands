@@ -17,13 +17,13 @@ const sendHelpMenu = (message: Message, instance: WOKCommands) => {
 }
 
 module.exports = {
-  description: "Displays this bot's commands",
+  description: "Exibe os comandos deste bot",
   category: 'Help',
 
-  aliases: 'commands',
+  aliases: '?',
 
   maxArgs: 1,
-  expectedArgs: '[command]',
+  expectedArgs: '[comando]',
 
   init: (client: Client, instance: WOKCommands) => {
     client.on('messageReactionAdd', async (reaction, user) => {
