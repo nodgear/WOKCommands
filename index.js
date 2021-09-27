@@ -1,3 +1,3 @@
-import WOKCommands from './src'
+const WOKCommands = require('./src')
 
 export default WOKCommands
