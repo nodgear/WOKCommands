@@ -4,7 +4,7 @@ import { ICallbackObject, ICommand } from '../..'
 
 export = {
   description: 'Enables or disables a command for this guild',
-  category: 'Configuration',
+  category: 'Configuração',
 
   permissions: ['ADMINISTRATOR'],
 
