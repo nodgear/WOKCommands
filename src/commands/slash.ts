@@ -2,7 +2,7 @@ import { ApplicationCommand, MessageEmbed } from 'discord.js'
 import { ICallbackObject, ICommand } from '../..'
 
 export = {
-  description: 'Allows the bot developers to manage existing slash commands',
+  description: 'Permite ao desenvolvedor gerenciar commandos Slash',
   category: 'Configuration',
 
   permissions: ['ADMINISTRATOR'],
@@ -56,10 +56,10 @@ export = {
 
     const embed = new MessageEmbed()
       .addField(
-        'How to delete a slash command:',
+        'Deletando:',
         `${instance.getPrefix(guild)}slash <command-id>`
       )
-      .addField('List of global slash commands:', allSlashCommands)
+      .addField('Lista de comandos globais:', allSlashCommands)
 
     if (guild) {
       const guildOnly = await slashCommands.get(guild.id)
@@ -75,7 +75,7 @@ export = {
       }
 
       embed.addField(
-        'List of slash commands for this guild:',
+        'Lista de comandos do servidor:',
         guildOnlyCommands
       )
     }
