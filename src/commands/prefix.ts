@@ -3,7 +3,7 @@ import prefixes from '../models/prefixes'
 
 export = {
   description: 'Exibe/Define o prefixo do servidor',
-  category: 'Configuration',
+  category: 'Configuração',
 
   permissions: ['ADMINISTRATOR'],
 
