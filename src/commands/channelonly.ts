@@ -3,14 +3,14 @@ import { ICallbackObject, ICommand } from '../..'
 import channelCommandSchema from '../models/channel-commands'
 
 export = {
-  description: 'Makes a command only work in some channels.',
-  category: 'Configuration',
+  description: 'Relaciona comandos a um canal específico.',
+  category: 'Configuração',
 
   permissions: ['ADMINISTRATOR'],
 
   minArgs: 1,
   maxArgs: 2,
-  expectedArgs: '<Command name> [Channel tag]',
+  expectedArgs: '<Nome comando> [Canal]',
 
   cooldown: '2s',
   guildOnly: true,
@@ -19,14 +19,14 @@ export = {
 
   options: [
     {
-      name: 'command',
-      description: 'The command name',
+      name: 'comando',
+      description: 'Nome do comando',
       type: DiscordJS.Constants.ApplicationCommandOptionTypes.STRING,
       required: true,
     },
     {
       name: 'channel',
-      description: 'The tag of the channel',
+      description: 'Tag do canal',
       type: DiscordJS.Constants.ApplicationCommandOptionTypes.CHANNEL,
       required: false,
     },
