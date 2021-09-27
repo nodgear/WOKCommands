@@ -2,7 +2,7 @@ import { ICallbackObject, ICommand } from '../..'
 import prefixes from '../models/prefixes'
 
 export = {
-  description: 'Displays or sets the prefix for the current guild',
+  description: 'Exibe/Define o prefixo do servidor',
   category: 'Configuration',
 
   permissions: ['ADMINISTRATOR'],
