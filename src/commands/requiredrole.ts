@@ -3,7 +3,7 @@ import { ICallbackObject, ICommand } from '../..'
 import requiredRoleSchema from '../models/required-roles'
 
 export = {
-  description: 'Specifies what role each command requires.',
+  description: 'Vincula comandos a cargos específicos.',
   category: 'Configuration',
 
   permissions: ['ADMINISTRATOR'],
@@ -11,7 +11,7 @@ export = {
 
   minArgs: 2,
   maxArgs: 2,
-  expectedArgs: '<command> <none-or-roleid>',
+  expectedArgs: '<comando> <none-ou-roleid>',
 
   cooldown: '2s',
 
